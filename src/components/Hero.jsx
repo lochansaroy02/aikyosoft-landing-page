@@ -7,11 +7,11 @@ export const Hero = () => {
                 <img src={background} alt="background" className='absolute w-full blur-sm opacity-15 -z-10 h-full object-cover' />
             </div>
             <div className='flex flex-col gap-4 items-center   text-neutral-200 justify-center mt-12  p-10'>
-                <h1 className='text-[5rem]  font-bold  '>
+                <h1 className='text-[5rem]  font-bold motion-preset-slide-right motion-duration-2000  '>
                     This is heading
                 </h1>
-                <p className='text-xl  w-3/4 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit? Modi harum distinctio tenetur eaque? Repudiandae facere optio quis, unde ipsum repellendus reprehenderit omnis itaque? Similique itaque dolorem excepturi possimus.</p>
-                <button className='bg-neutral-800 text-xl  text-white px-8 py-4 rounded-full'>
+                <p className='text-xl  w-3/4 motion-preset-slide-left motion-duration-2000  '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit? Modi harum distinctio tenetur eaque? Repudiandae facere optio quis, unde ipsum repellendus reprehenderit omnis itaque? Similique itaque dolorem excepturi possimus.</p>
+                <button className='bg-neutral-800 text-xl  motion-preset-slide-up motion-duration-1000 text-white px-8 py-4 rounded-full  '>
                     <a to="/">
                         Get Started
                     </a>

@@ -7,6 +7,7 @@ import Service from './components/Service'
 import Testimonial from './components/Testimonial'
 import Tech from './components/Tech'
 const App = () => {
+
   return (
     <div className='overflow-x-clip  '>
       <Navbar />

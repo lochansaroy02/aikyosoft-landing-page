@@ -1,6 +1,6 @@
 import React from 'react';
 import bitcoin from '../assets/bitcoin-removebg.png';
-
+import { motion } from "motion/react"
 const Service = () => {
     const features = [
         { id: 1, title: 'Website Development', image: bitcoin },
@@ -13,11 +13,11 @@ const Service = () => {
     ];
 
     return (
-        <div className="p-10 flex flex-col gap-4 absolute top-[85vh] items-center w-full h-full">
-            <div className="grid grid-cols-7 gap-4  w-[80%]">
-                {features.map((feature) => (
-                    <div key={feature.id} className="p-4 bg-gray-300  rounded-xl">
-                        <div className="flex flex-col justify-center items-center gap-4">
+        <div className="p-10 mt-4 flex flex-col gap-4 absolute top-[85vh] items-center w-full h-full">
+            <div className="grid grid-cols-7 gap-4    w-[80%]">
+                {features.map((feature, index) => (
+                    <motion.div initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: index * 0.2 }} key={feature.id} className={`p-4 bg-gray-300  rounded-xl`} >
+                        <div className={`flex flex-col justify-center items-center gap-4 `} >
                             <img className="size-16 " src={feature.image} alt={feature.title} />
                             <h1 className="text-sm text-center">
                                 {feature.title.split(' ').map((word, index) => (
@@ -28,10 +28,10 @@ const Service = () => {
                                 ))}
                             </h1>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
-        </div>
+        </div >
     );
 };
 
