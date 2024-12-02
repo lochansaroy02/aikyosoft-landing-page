@@ -44,13 +44,11 @@ const Tech = () => {
 
     return (
         <div
-            ref={containerRef}
             className="flex flex-col items-center justify-center gap-8 mx-24 overflow-hidden"
         >
-            <h1 className="text-4xl font-bold">Technologies We Use</h1>
+            <h1 className="text-4xl font-spectral font-bold">Technologies We Use</h1>
             <div
-                className={`relative w-full gap-4 flex ${animate ? 'animate-move-left' : ''
-                    }`}
+                className={`relative w-full gap-4 flex `}
             >
                 {techs.map((tech, index) => (
                     <div

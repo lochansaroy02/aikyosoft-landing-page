@@ -48,8 +48,8 @@ const Contact = () => {
         },
     ]
     return (
-        <div className='p-10 flex  flex-col gap-8 justify-center  '>
-            <h1 className='text-4xl font-bold text-center'>Contact</h1>
+        <div className='p-10 flex   flex-col gap-8 justify-center  '>
+            <h1 className='text-4xl font-spectral font-bold text-center'>Contact</h1>
             <div className='flex gap-4 border border-neutral-800  p-4 rounded-xl'>
 
 
@@ -60,8 +60,8 @@ const Contact = () => {
 
                                 <Icon className='size-8' icon={item.icon} />
                                 <div>
-                                    <h1 className='text-neutral-900 text-xl font-semibold'>{item.title}</h1>
-                                    <p className='text-neutral-800'>{item.value}</p>
+                                    <h1 className='text-slate-100 font-poppins text-xl font-semibold'>{item.title}</h1>
+                                    <p className='text-slate-200 font-poppins'>{item.value}</p>
                                 </div>
                             </div>
                         ))}
@@ -80,11 +80,11 @@ const Contact = () => {
                 <div className='w-1/2 p-4 flex flex-col gap-4 '>
 
                     <div className='flex flex-col gap-4  '>
-                        <label htmlFor="name" className='text-neutral-900 font-semibold'>Name</label>
+                        <label htmlFor="name" className='font-poppins text-slate-100 font-semibold'>Name</label>
                         <input type="text" placeholder='Name' className='p-2 rounded-md border border-neutral-800' />
-                        <label htmlFor="email" className='text-neutral-900 font-semibold'>Email</label>
+                        <label htmlFor="email" className='font-poppins text-slate-100 font-semibold'>Email</label>
                         <input type="email" placeholder='Email' className='p-2 rounded-md border border-neutral-800' />
-                        <label htmlFor="message" className='text-neutral-900 font-semibold'>Message</label>
+                        <label htmlFor="message" className='font-poppins text-slate-100 font-semibold'>Message</label>
                         <textarea placeholder='Message' className='p-2 rounded-md border border-neutral-800' />
                     </div >
                     <div className='flex justify-center'>

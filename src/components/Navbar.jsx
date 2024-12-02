@@ -12,7 +12,7 @@ const Navbar = () => {
             <div className='flex gap-4 mr-12  '>
                 {
                     element.map((item, index) => (
-                        <li initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className='hover:bg-neutral-500 hover:text-white active:bg-neutral-500 active:text-white ease-in-out duration-300 px-2 py-1 rounded-md  text-neutral-800 font-semibold text-base list-none cursor-pointer' key={index}>{item}</li>
+                        <li initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className='hover:bg-slate-500 hover:text-slate-200 active:bg-slate-500 font-poppins active:text-white ease-in-out duration-300 px-2 py-1 rounded-md  text-slate-300  text-sm list-none cursor-pointer' key={index}>{item}</li>
                     ))
                 }
             </div>

@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         sans: "var(--font-sans)",
         serif: "var(--font-serif)",
+        faculty: ['Faculty Glyphic', 'sans-serif'],
+        spectral: ['Spectral', 'serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
       animation: {
         'move-left': 'move-left 20s linear infinite',
