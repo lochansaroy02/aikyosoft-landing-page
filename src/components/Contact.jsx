@@ -82,17 +82,17 @@ const Contact = () => {
 
                 <div className='lg:w-1/2 p-4 flex flex-col gap-4 '>
 
-                    <div className='flex flex-col gap-4  '>
-                        <label htmlFor="name" className='font-poppins text-slate-100 font-semibold'>Name</label>
-                        <input type="text" placeholder='Name' className='p-2 rounded-md border border-neutral-800' />
-                        <label htmlFor="email" className='font-poppins text-slate-100 font-semibold'>Email</label>
-                        <input type="email" placeholder='Email' className='p-2 rounded-md border border-neutral-800' />
-                        <label htmlFor="message" className='font-poppins text-slate-100 font-semibold'>Message</label>
-                        <textarea placeholder='Message' className='p-2 rounded-md border border-neutral-800' />
+                    <div className='flex flex-col gap-2  '>
+                        <label htmlFor="name" className='font-poppins text-slate-400 px-2 text-sm '>Name</label>
+                        <input type="text" placeholder='Name' className='w-full font-poppins py-2 px-4 text-sm rounded-lg  bg-slate-800 text-neutral-100 focus:outline-none border border-slate-600' />
+                        <label htmlFor="email" className='font-poppins text-slate-400 px-2 text-sm '>Email</label>
+                        <input type="email" placeholder='Email' className='w-full font-poppins py-2 px-4 text-sm rounded-lg  bg-slate-800 text-neutral-100 focus:outline-none border border-slate-600' />
+                        <label htmlFor="message" className='font-poppins px-2  text-slate-400 text-sm '>Message</label>
+                        <textarea placeholder='Message' className='w-full py-2 font-poppins px-4 text-sm rounded-lg  bg-slate-800 text-neutral-100 focus:outline-none border border-slate-600' />
                     </div >
                     <div className='flex justify-center'>
 
-                        <button className='bg-slate-700 w-3/4 text-white p-2 rounded-md'>Submit</button>
+                        <button className='bg-slate-800 text-slate-200   w-1/4 font-poppins border border-slate-500 p-2 rounded-xl'>Submit</button>
                     </div>
                 </div>
             </div>
