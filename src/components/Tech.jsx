@@ -44,19 +44,19 @@ const Tech = () => {
 
     return (
         <div
-            className="flex flex-col items-center justify-center gap-8 mx-24 overflow-hidden"
+            className="flex flex-col items-center justify-center gap-8 mx-4 lg:mx-24 overflow-hidden"
         >
-            <h1 className="text-4xl font-spectral font-bold">Technologies We Use</h1>
+            <h1 className="lg:text-4xl text-2xl font-spectral font-bold">Technologies We Use</h1>
             <div
-                className={`relative w-full gap-4 flex `}
+                className={`relative w-full animate-move-left  gap-4 flex  `}
             >
                 {techs.map((tech, index) => (
                     <div
                         key={index}
-                        className="flex flex-col  items-center justify-center gap-2 cursor-pointer hover:scale-125 transition-all duration-200"
+                        className="flex flex-col py-4  items-center justify-center gap-2 cursor-pointer hover:scale-125 transition-all duration-200"
                     >
-                        <Icon className="text-7xl" icon={tech.icon} />
-                        <h1 className="text-sm">{tech.name}</h1>
+                        <Icon className="lg:text-7xl text-4xl" icon={tech.icon} />
+                        <h1 className="text-xs lg:text-sm">{tech.name}</h1>
                     </div>
                 ))}
             </div>
