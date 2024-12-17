@@ -2,7 +2,7 @@ import React from 'react'
 import background from '../assets/bg.jpg'
 export const Hero = () => {
     return (
-        <div className='flex relative  w-full h-1/2   justify-center lg:w-screen lg:h-screen mt-12 items-center'>
+        <div id='home' className='flex relative  w-full h-1/2   justify-center lg:w-screen lg:h-screen mt-12 items-center'>
             <div className='absolute lg:w-full w-full h-full  -z-10 lg:h-full object-cover bg-neutral-800'>
                 <img src={background} alt="background" className='absolute w-full blur-sm opacity-15 -z-10 h-full object-cover' />
             </div>

@@ -18,7 +18,7 @@ const Service = () => {
     ];
 
     return (
-        <div className="p-10 mt-4 flex flex-col gap-4 absolute lg:top-[85vh] items-center w-full h-full">
+        <div id="services" className="p-10 mt-4 flex flex-col gap-4 absolute lg:top-[85vh] items-center w-full h-full">
             <div className="grid lg:grid-cols-6 gap-4  grid-cols-3   lg:w-[80%]">
                 {features.map((feature, index) => (
                     <motion.div initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: index * 0.2 }} key={feature.id} className={`p-4 bg-slate-700 border border-slate-400 rounded-xl`} >

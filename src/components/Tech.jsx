@@ -55,8 +55,8 @@ const Tech = () => {
                         key={index}
                         className="flex flex-col py-4  items-center justify-center gap-2 cursor-pointer hover:scale-125 transition-all duration-200"
                     >
-                        <Icon className="lg:text-7xl text-4xl" icon={tech.icon} />
-                        <h1 className="text-xs lg:text-sm">{tech.name}</h1>
+                        <Icon className="lg:text-7xl text-6xl" icon={tech.icon} />
+                        <h1 className="text-xs lg:text-base font-poppins">{tech.name}</h1>
                     </div>
                 ))}
             </div>

@@ -48,12 +48,12 @@ const Contact = () => {
         },
     ]
     return (
-        <div className='lg:p-10 flex  p-8 flex-col gap-8 justify-center  '>
+        <div id='contact' className='lg:p-10 flex  p-8 flex-col gap-8 justify-center  '>
             <h1 className='lg:text-4xl text-2xl font-spectral font-bold text-center'>Contact</h1>
-           
-           
-           
-            <div className='flex lg:flex-row flex-col gap-4 border border-neutral-800  p-4 rounded-xl'>
+
+
+
+            <div className='flex lg:flex-row flex-col gap-4 border border-slate-700  p-4 rounded-xl'>
 
 
                 <div className='lg:w-1/2 p-4 flex flex-col justify-between gap-4'>
@@ -69,7 +69,7 @@ const Contact = () => {
                             </div>
                         ))}
                     </div>
-                    <div className='flex gap-4 border lg:w-3/4 border-neutral-800 p-4 rounded-xl justify-around  '>
+                    <div className='flex gap-4 border lg:w-3/4 border-slate-800 p-4 rounded-xl justify-around  '>
                         {social.map((item) => (
                             <div key={item.id} className='flex items-center gap-4'>
                                 <a className='' href={item.value} key={item.id}>
@@ -92,7 +92,7 @@ const Contact = () => {
                     </div >
                     <div className='flex justify-center'>
 
-                        <button className='bg-neutral-800 w-3/4 text-white p-2 rounded-md'>Submit</button>
+                        <button className='bg-slate-700 w-3/4 text-white p-2 rounded-md'>Submit</button>
                     </div>
                 </div>
             </div>
