@@ -21,13 +21,13 @@ const Service = () => {
         <div className="p-10 mt-4 flex flex-col gap-4 absolute top-[85vh] items-center w-full h-full">
             <div className="grid grid-cols-6 gap-4    w-[80%]">
                 {features.map((feature, index) => (
-                    <motion.div initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: index * 0.2 }} key={feature.id} className={`p-4 bg-slate-500  rounded-xl`} >
-                        <div className={`flex flex-col justify-center items-center gap-4 `} >
+                    <motion.div initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: index * 0.2 }} key={feature.id} className={`p-4 bg-slate-700 border border-slate-400 rounded-xl`} >
+                        <div className={`flex flex-col justify-center items-center  gap-4 `} >
                             <div>
                                 <img className="size-14 " src={feature.image} alt={feature.title} />
                             </div>
                             <div className="">
-                                <h1 className="text-sm  text-slate-200 font-poppins text-center">
+                                <h1 className="text-sm font-poppins text-slate-200  text-center">
                                     {feature.title}
                                 </h1>
                             </div>
