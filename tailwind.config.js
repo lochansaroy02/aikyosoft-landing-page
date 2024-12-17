@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import tailwindcssMotion from 'tailwindcss-motion';
+
 export default {
   content: [
     "./index.html",
@@ -45,6 +47,6 @@ export default {
     },
   },
   plugins: [
-    require('tailwindcss-motion')
+    tailwindcssMotion,
   ],
 };
